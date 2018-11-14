@@ -97,7 +97,9 @@ public class ForecastView extends LinearLayout {
         }
         weatherDescription.setText(weather.getDisplayName());
         weatherTemperature.setText(forecast.getTemperature());
-        Glide.with(getContext()).load(weatherToIcon(weather)).into(weatherImage);
+//        if (getContext() != null) {
+//            Glide.with(getContext()).load(weatherToIcon(weather)).into(weatherImage);
+//        }
         invalidate();
 
         weatherImage.animate()
