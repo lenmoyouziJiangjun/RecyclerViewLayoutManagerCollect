@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.view.View;
 
+import com.lll.demo.cardlayoutmanager.CardLayoutManagerActivity;
 import com.lll.demo.carouselayoutmanager.CarouseLayoutManagerActivity;
 import com.lll.demo.discrete.DiscreteActivity;
 import com.lll.layoutmanager.demo.R;
@@ -31,5 +32,8 @@ public class DemoActivity extends DemoBaseActivity {
         startDemoActivity(DiscreteActivity.class);
     }
 
+    public void showCardLayout(View view) {
+        startDemoActivity(CardLayoutManagerActivity.class);
+    }
 
 }

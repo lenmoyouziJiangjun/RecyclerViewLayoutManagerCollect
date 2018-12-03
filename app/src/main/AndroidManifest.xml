@@ -3,12 +3,12 @@
     package="com.lll.layoutmanager.demo">
 
     <application
+        android:name="com.lll.demo.LayoutManagerDemoApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:name="com.lll.demo.LayoutManagerDemoApplication"
         android:theme="@style/AppTheme">
         <activity android:name="com.lll.demo.DemoActivity">
             <intent-filter>
@@ -24,6 +24,7 @@
         <activity android:name="com.lll.demo.discrete.weather.WeatherActivity" />
         <activity android:name="com.lll.demo.discrete.shop.ShopActivity" />
         <activity android:name="com.lll.demo.discrete.gallery.GalleryActivity" />
+        <activity android:name="com.lll.demo.cardlayoutmanager.CardLayoutManagerActivity" />
 
 
     </application>
