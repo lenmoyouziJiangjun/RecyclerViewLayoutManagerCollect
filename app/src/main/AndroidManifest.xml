@@ -25,6 +25,7 @@
         <activity android:name="com.lll.demo.discrete.shop.ShopActivity" />
         <activity android:name="com.lll.demo.discrete.gallery.GalleryActivity" />
         <activity android:name="com.lll.demo.cardlayoutmanager.CardLayoutManagerActivity" />
+        <activity android:name="com.lll.demo.fanlayoutmanager.FanlayoutManagerActivity" />
 
 
     </application>

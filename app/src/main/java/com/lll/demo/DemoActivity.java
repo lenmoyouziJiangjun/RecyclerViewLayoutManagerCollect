@@ -7,6 +7,7 @@ import android.view.View;
 import com.lll.demo.cardlayoutmanager.CardLayoutManagerActivity;
 import com.lll.demo.carouselayoutmanager.CarouseLayoutManagerActivity;
 import com.lll.demo.discrete.DiscreteActivity;
+import com.lll.demo.fanlayoutmanager.FanlayoutManagerActivity;
 import com.lll.layoutmanager.demo.R;
 
 /**
@@ -36,4 +37,7 @@ public class DemoActivity extends DemoBaseActivity {
         startDemoActivity(CardLayoutManagerActivity.class);
     }
 
+    public void showFanLayout(View view) {
+        startDemoActivity(FanlayoutManagerActivity.class);
+    }
 }
