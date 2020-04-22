@@ -5,7 +5,6 @@ import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.bumptech.glide.request.RequestOptions;
 import com.lll.layoutmanager.demo.R;
 
-import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,11 +12,15 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.recyclerview.widget.RecyclerView;
+
 import java.util.List;
 
 /**
- * Created by linchen on 2018/1/26.
- * mail: linchen@sogou-inc.com
+ * Version 1.0
+ * Created by lll on 2020/4/22.
+ * Description
+ * copyright generalray4239@gmail.com
  */
 
 public class CardAdapter extends RecyclerView.Adapter<CardAdapter.CardHolder> {

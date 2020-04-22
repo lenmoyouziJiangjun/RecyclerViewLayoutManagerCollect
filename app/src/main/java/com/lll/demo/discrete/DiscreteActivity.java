@@ -1,8 +1,9 @@
 package com.lll.demo.discrete;
 
 import android.os.Bundle;
-import android.support.annotation.Nullable;
 import android.view.View;
+
+import androidx.annotation.Nullable;
 
 import com.lll.demo.DemoBaseActivity;
 import com.lll.demo.discrete.gallery.Gallery;

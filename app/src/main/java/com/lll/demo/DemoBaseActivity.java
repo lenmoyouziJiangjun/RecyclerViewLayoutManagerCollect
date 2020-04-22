@@ -1,13 +1,14 @@
 package com.lll.demo;
 
+import android.app.ActivityOptions;
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class DemoBaseActivity extends AppCompatActivity {
 
     public void startDemoActivity(Class activity) {
         Intent intent = new Intent(this, activity);
-        startActivity(intent);
+        startActivity(intent, ActivityOptions.makeSceneTransitionAnimation(this, null).toBundle());
     }
-
 }

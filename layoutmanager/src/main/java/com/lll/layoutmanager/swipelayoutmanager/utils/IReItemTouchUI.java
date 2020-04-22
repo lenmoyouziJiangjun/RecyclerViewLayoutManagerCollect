@@ -1,8 +1,9 @@
 package com.lll.layoutmanager.swipelayoutmanager.utils;
 
 import android.graphics.Canvas;
-import android.support.v7.widget.RecyclerView;
 import android.view.View;
+
+import androidx.recyclerview.widget.RecyclerView;
 
 /**
  * Version 1.0

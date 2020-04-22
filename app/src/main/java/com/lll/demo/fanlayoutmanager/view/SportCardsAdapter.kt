@@ -2,14 +2,14 @@ package com.lll.demo.fanlayoutmanager.view
 
 import android.content.Context
 import android.os.Build
-import android.support.v4.content.ContextCompat
-import android.support.v7.widget.CardView
-import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.cardview.widget.CardView
+import androidx.core.content.ContextCompat
+import androidx.recyclerview.widget.RecyclerView
 import com.lll.demo.fanlayoutmanager.models.SportCardModel
 import com.lll.layoutmanager.demo.R
 

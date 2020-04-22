@@ -1,18 +1,22 @@
 package com.lll.demo.cardlayoutmanager;
 
 import android.content.Context;
-import android.support.annotation.Nullable;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.view.MotionEvent;
 import android.widget.ImageView;
 
+import androidx.annotation.Nullable;
+import androidx.appcompat.widget.AppCompatImageView;
+
 /**
- * Created by linchen on 2018/2/9.
- * mail: linchen@sogou-inc.com
+ * Version 1.0
+ * Created by lll on 2020/4/22.
+ * Description
+ * copyright generalray4239@gmail.com
  */
 
-public class SrcImageView extends ImageView {
+public class SrcImageView extends AppCompatImageView {
     public SrcImageView(Context context) {
         super(context);
     }

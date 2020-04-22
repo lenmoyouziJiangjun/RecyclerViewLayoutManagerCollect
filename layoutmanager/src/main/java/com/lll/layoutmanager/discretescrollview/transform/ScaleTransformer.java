@@ -1,7 +1,8 @@
 package com.lll.layoutmanager.discretescrollview.transform;
 
-import android.support.annotation.FloatRange;
 import android.view.View;
+
+import androidx.annotation.FloatRange;
 
 /**
  * Created by yarolegovich on 03.03.2017.

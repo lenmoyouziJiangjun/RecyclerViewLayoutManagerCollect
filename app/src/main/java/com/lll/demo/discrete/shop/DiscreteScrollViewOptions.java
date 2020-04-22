@@ -4,14 +4,15 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.SharedPreferences;
 import android.preference.PreferenceManager;
-import android.support.design.widget.BottomSheetDialog;
-import android.support.v7.widget.PopupMenu;
-import android.support.v7.widget.RecyclerView;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.PopupMenu;
 
 
+import androidx.recyclerview.widget.RecyclerView;
+
+import com.google.android.material.bottomsheet.BottomSheetDialog;
 import com.lll.demo.LayoutManagerDemoApplication;
 import com.lll.layoutmanager.demo.R;
 import com.lll.layoutmanager.discretescrollview.DiscreteScrollView;
@@ -20,7 +21,10 @@ import com.lll.layoutmanager.discretescrollview.InfiniteScrollAdapter;
 import java.lang.ref.WeakReference;
 
 /**
- * Created by yarolegovich on 08.03.2017.
+ * Version 1.0
+ * Created by lll on 2020/4/22.
+ * Description
+ * copyright generalray4239@gmail.com
  */
 
 public class DiscreteScrollViewOptions {

@@ -6,11 +6,11 @@ import android.content.Context
 import android.graphics.Rect
 import android.os.Parcel
 import android.os.Parcelable
-import android.support.annotation.Nullable
-import android.support.v7.widget.RecyclerView
 import android.util.SparseArray
 import android.view.View
 import android.view.ViewGroup
+import androidx.annotation.Nullable
+import androidx.recyclerview.widget.RecyclerView
 import org.jetbrains.annotations.NotNull
 import java.util.*
 
@@ -340,8 +340,8 @@ class FanlayoutManager(val context: Context, @Nullable settings: FanLayoutManage
 
     override fun onMeasure(recycler: RecyclerView.Recycler, state: RecyclerView.State, widthSpec: Int, heightSpec: Int) {
         val heightMode = View.MeasureSpec.getMode(heightSpec)
-        val scaledHeight = (mSettings.getViewHeightPx() * mAnimationHelper.getViewScaleFactor()) as Long
-        val scaledWidth = (mSettings.getViewWidthPx() * mAnimationHelper.getViewScaleFactor()) as Long
+        val scaledHeight = (mSettings.getViewHeightPx() * mAnimationHelper.getViewScaleFactor())
+        val scaledWidth = (mSettings.getViewWidthPx() * mAnimationHelper.getViewScaleFactor())
         val height = if (heightMode == View.MeasureSpec.EXACTLY)
             View.MeasureSpec.getSize(heightSpec)
         else
@@ -619,10 +619,12 @@ class FanlayoutManager(val context: Context, @Nullable settings: FanLayoutManage
         var centerXView: Int
         for (i in 0..childCount) {
             item = getChildAt(i)
-            centerXView = (getDecoratedLeft(item!!) + viewHalfWidth).toInt()
-            if (nearestToCenterView == null || Math.abs(nearestDeltaX) > Math.abs(centerX - centerXView)) {
-                nearestToCenterView = item
-                nearestDeltaX = (centerX - centerXView).toInt()
+            item?.let {
+                centerXView = (getDecoratedLeft(item!!) + viewHalfWidth).toInt()
+                if (nearestToCenterView == null || Math.abs(nearestDeltaX) > Math.abs(centerX - centerXView)) {
+                    nearestToCenterView = item
+                    nearestDeltaX = (centerX - centerXView).toInt()
+                }
             }
         }
         return nearestToCenterView

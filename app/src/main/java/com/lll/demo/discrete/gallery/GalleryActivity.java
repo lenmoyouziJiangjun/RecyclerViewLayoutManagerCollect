@@ -2,13 +2,14 @@ package com.lll.demo.discrete.gallery;
 
 import android.animation.ArgbEvaluator;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.design.widget.Snackbar;
-import android.support.v4.content.ContextCompat;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
 
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
+
+import com.google.android.material.snackbar.Snackbar;
 import com.lll.layoutmanager.demo.R;
 import com.lll.layoutmanager.discretescrollview.DiscreteScrollView;
 

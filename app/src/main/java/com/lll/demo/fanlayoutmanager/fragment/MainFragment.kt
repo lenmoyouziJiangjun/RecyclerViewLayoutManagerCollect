@@ -3,13 +3,14 @@ package com.lll.demo.fanlayoutmanager.fragment
 import android.animation.Animator
 import android.os.Build
 import android.os.Bundle
-import android.support.v4.app.Fragment
-import android.support.v7.widget.DefaultItemAnimator
-import android.support.v7.widget.RecyclerView
 import android.transition.Fade
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.annotation.RequiresApi
+import androidx.fragment.app.Fragment
+import androidx.recyclerview.widget.DefaultItemAnimator
+import androidx.recyclerview.widget.RecyclerView
 import com.lll.demo.fanlayoutmanager.SportCardsUtils
 import com.lll.demo.fanlayoutmanager.view.SharedTransitionSet
 import com.lll.demo.fanlayoutmanager.view.SportCardsAdapter
@@ -91,7 +92,7 @@ class MainFragment : Fragment() {
         (view.findViewById(R.id.logo) as View).setOnClickListener(View.OnClickListener { mLayoutManager.collapseViews() })
     }
 
-    @android.support.annotation.RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
+    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     fun onClick(view: View, pos: Int) {
         val fragment = FullInfoTabFragment.newInstance(mAdapter.getModelByPos(pos))
 

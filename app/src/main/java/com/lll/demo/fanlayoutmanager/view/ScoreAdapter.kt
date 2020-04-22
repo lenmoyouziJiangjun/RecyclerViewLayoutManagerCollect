@@ -1,11 +1,11 @@
 package com.lll.demo.fanlayoutmanager.view
 
-import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.recyclerview.widget.RecyclerView
 import com.lll.demo.fanlayoutmanager.models.AthleticModel
 import com.lll.demo.fanlayoutmanager.models.Country
 import com.lll.layoutmanager.demo.R

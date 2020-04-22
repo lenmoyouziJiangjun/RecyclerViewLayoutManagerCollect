@@ -3,9 +3,9 @@ package com.lll.layoutmanager.fanlayoutmanager
 import android.animation.Animator
 import android.animation.ObjectAnimator
 import android.animation.ValueAnimator
-import android.support.v7.widget.RecyclerView
 import android.view.View
 import android.view.animation.DecelerateInterpolator
+import androidx.recyclerview.widget.RecyclerView
 
 
 private const val ANIMATION_VIEW_SCALE_FACTOR: Float = 1.5f
@@ -37,7 +37,10 @@ class AnimationHelperImpl : AnimationHelper {
 
 
     override fun openItem(view: View, delay: Int, animatorListener: Animator.AnimatorListener) {
-        val valueAnimator: ValueAnimator = ValueAnimator.ofFloat(1f, ANIMATION_VIEW_SCALE_FACTOR + ANIMATION_VIEW_SCALE_FACTOR_THRESHOLD)
+        val valueAnimator: ValueAnimator = ValueAnimator.ofFloat(
+            1f,
+            ANIMATION_VIEW_SCALE_FACTOR + ANIMATION_VIEW_SCALE_FACTOR_THRESHOLD
+        )
         valueAnimator.addUpdateListener {
             var value: Float = it.animatedValue as Float
             if (value < 1F + ANIMATION_VIEW_SCALE_FACTOR_THRESHOLD / 2) {
@@ -72,7 +75,13 @@ class AnimationHelperImpl : AnimationHelper {
         valueAnimator.start()
     }
 
-    override fun shiftSideViews(viewAnimations: Collection<ViewAnimationInfo>, delay: Int, layoutManager: RecyclerView.LayoutManager, animatorListener: Animator.AnimatorListener, animatorUpdateListener: ValueAnimator.AnimatorUpdateListener) {
+    override fun shiftSideViews(
+        viewAnimations: Collection<ViewAnimationInfo>,
+        delay: Int,
+        layoutManager: RecyclerView.LayoutManager,
+        animatorListener: Animator.AnimatorListener?,
+        animatorUpdateListener: ValueAnimator.AnimatorUpdateListener?
+    ) {
         var bounceAnimator = ValueAnimator.ofFloat(0f, 1f)
 
         bounceAnimator.addUpdateListener { animator: ValueAnimator? ->
@@ -80,13 +89,21 @@ class AnimationHelperImpl : AnimationHelper {
             for (viewAnimation in viewAnimations) {
 
                 // left offset for view for current update value
-                val left = (viewAnimation.startLeft + value * (viewAnimation.finishLeft - viewAnimation.startLeft)).toInt()
+                val left =
+                    (viewAnimation.startLeft + value * (viewAnimation.finishLeft - viewAnimation.startLeft)).toInt()
 
                 // right offset for view for current update value
-                var right = (viewAnimation.startRight + value * (viewAnimation.finishRight - viewAnimation.startRight)).toInt()
+                var right =
+                    (viewAnimation.startRight + value * (viewAnimation.finishRight - viewAnimation.startRight)).toInt()
 
                 // update view with new params
-                layoutManager.layoutDecorated(viewAnimation.view, left, viewAnimation.top, right, viewAnimation.bootom)
+                layoutManager.layoutDecorated(
+                    viewAnimation.view,
+                    left,
+                    viewAnimation.top,
+                    right,
+                    viewAnimation.bottom
+                )
             }
 
             if (animatorUpdateListener != null) {
@@ -102,6 +119,7 @@ class AnimationHelperImpl : AnimationHelper {
         }
         bounceAnimator.start()
     }
+
 
     override fun getViewScaleFactor(): Float {
         return ANIMATION_VIEW_SCALE_FACTOR

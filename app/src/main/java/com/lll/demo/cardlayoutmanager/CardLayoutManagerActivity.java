@@ -1,13 +1,13 @@
 package com.lll.demo.cardlayoutmanager;
 
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.lll.layoutmanager.demo.R;
 import com.lll.layoutmanager.swipelayoutmanager.CardLayoutManager;

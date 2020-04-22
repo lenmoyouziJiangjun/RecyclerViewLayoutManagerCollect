@@ -3,20 +3,22 @@ package com.lll.demo.cardlayoutmanager;
 
 import android.app.Dialog;
 import android.content.Context;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
-import android.support.annotation.StyleRes;
 import android.view.Gravity;
 import android.view.Window;
 import android.view.WindowManager;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.annotation.StyleRes;
+
 import com.lll.layoutmanager.demo.R;
 
 /**
- * Created by linchen on 2017/7/20.
- * mail: linchen@sogou-inc.com
+ * Version 1.0
+ * Created by lll on 2020/4/22.
+ * Description
+ * copyright generalray4239@gmail.com
  */
-
 public class BottomDialog extends Dialog {
 
     private final static int DP_HEIGHT = 140;

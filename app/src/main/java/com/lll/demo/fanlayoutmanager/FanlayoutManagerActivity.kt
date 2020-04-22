@@ -1,8 +1,7 @@
 package com.lll.demo.fanlayoutmanager
 
 import android.os.Bundle
-import android.support.v4.app.Fragment
-import android.support.v7.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatActivity
 import com.lll.demo.fanlayoutmanager.fragment.MainFragment
 import com.lll.layoutmanager.demo.R
 

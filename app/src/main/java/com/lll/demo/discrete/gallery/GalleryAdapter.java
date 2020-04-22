@@ -2,12 +2,13 @@ package com.lll.demo.discrete.gallery;
 
 import android.app.Activity;
 import android.graphics.Point;
-import android.support.annotation.ColorInt;
-import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+
+import androidx.annotation.ColorInt;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
 import com.lll.layoutmanager.demo.R;
@@ -15,9 +16,11 @@ import com.lll.layoutmanager.demo.R;
 import java.util.List;
 
 /**
- * Created by yarolegovich on 16.03.2017.
+ * Version 1.0
+ * Created by lll on 2020/4/22.
+ * Description
+ * copyright generalray4239@gmail.com
  */
-
 public class GalleryAdapter extends RecyclerView.Adapter<GalleryAdapter.ViewHolder> {
 
     private int itemHeight;

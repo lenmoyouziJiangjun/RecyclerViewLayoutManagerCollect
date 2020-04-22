@@ -7,8 +7,6 @@ import android.graphics.LinearGradient;
 import android.graphics.Paint;
 import android.graphics.Shader;
 import android.os.Build;
-import android.support.annotation.ArrayRes;
-import android.support.annotation.RequiresApi;
 import android.util.AttributeSet;
 import android.view.Gravity;
 import android.view.animation.AccelerateDecelerateInterpolator;
@@ -16,11 +14,17 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import androidx.annotation.ArrayRes;
+import androidx.annotation.RequiresApi;
+
 import com.bumptech.glide.Glide;
 import com.lll.layoutmanager.demo.R;
 
 /**
- * Created by yarolegovich on 08.03.2017.
+ * Version 1.0
+ * Created by lll on 2020/4/22.
+ * Description
+ * copyright generalray4239@gmail.com
  */
 
 public class ForecastView extends LinearLayout {

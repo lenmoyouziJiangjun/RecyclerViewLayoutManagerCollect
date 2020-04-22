@@ -1,8 +1,9 @@
 package com.lll.demo;
 
 import android.os.Bundle;
-import android.support.annotation.Nullable;
 import android.view.View;
+
+import androidx.annotation.Nullable;
 
 import com.lll.demo.cardlayoutmanager.CardLayoutManagerActivity;
 import com.lll.demo.carouselayoutmanager.CarouseLayoutManagerActivity;
