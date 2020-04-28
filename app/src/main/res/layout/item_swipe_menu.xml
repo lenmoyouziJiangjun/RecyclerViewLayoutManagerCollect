@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    tools:ignore="MissingDefaultResource">
+
+
+    <!--左边menu-->
+    <TextView
+        android:id="@+id/left"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:background="@android:color/holo_blue_dark"
+        android:clickable="true"
+        android:text="分享"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="内容区域"
+        android:textColor="@color/colorAccent"
+        android:background="@color/card_sunbrite"/>
+
+
+    <LinearLayout
+        android:id="@+id/right"
+        android:layout_width="120dp"
+        android:layout_height="match_parent"
+        android:background="@android:color/holo_red_light"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_blue_bright"
+            android:clickable="true"
+            android:padding="20dp"
+            android:text="删除" />
+
+        <TextView
+            android:id="@+id/right_menu_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_orange_dark"
+            android:clickable="true"
+            android:padding="20dp"
+            android:text="收藏" />
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

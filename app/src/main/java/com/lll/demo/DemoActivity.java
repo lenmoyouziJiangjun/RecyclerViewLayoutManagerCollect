@@ -9,6 +9,10 @@ import com.lll.demo.cardlayoutmanager.CardLayoutManagerActivity;
 import com.lll.demo.carouselayoutmanager.CarouseLayoutManagerActivity;
 import com.lll.demo.discrete.DiscreteActivity;
 import com.lll.demo.fanlayoutmanager.FanlayoutManagerActivity;
+import com.lll.demo.itemhelper.DragAndDropActivity;
+import com.lll.demo.itemhelper.SwipeMenuActivity;
+import com.lll.demo.itemhelper.SwipeToDismissActivity;
+import com.lll.demo.itemhelper.widget.SwipeMenuLayout;
 import com.lll.layoutmanager.demo.R;
 
 /**
@@ -41,4 +45,21 @@ public class DemoActivity extends DemoBaseActivity {
     public void showFanLayout(View view) {
         startDemoActivity(FanlayoutManagerActivity.class);
     }
+
+
+    public void itemTouch(View view) {
+        startDemoActivity(DragAndDropActivity.class);
+    }
+
+
+    public void itemSwipe(View view) {
+        startDemoActivity(SwipeToDismissActivity.class);
+    }
+
+
+    public void swipeMenu(View view) {
+        startDemoActivity(SwipeMenuActivity.class);
+    }
+
+
 }

@@ -27,7 +27,10 @@
         <activity android:name="com.lll.demo.cardlayoutmanager.CardLayoutManagerActivity" />
         <activity android:name="com.lll.demo.fanlayoutmanager.FanlayoutManagerActivity" />
 
+        <activity android:name="com.lll.demo.itemhelper.DragAndDropActivity" />
+        <activity android:name="com.lll.demo.itemhelper.SwipeToDismissActivity"/>
 
+        <activity android:name="com.lll.demo.itemhelper.SwipeMenuActivity"/>
     </application>
 
 </manifest>

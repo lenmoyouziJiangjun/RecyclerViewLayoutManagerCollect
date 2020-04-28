@@ -46,7 +46,40 @@
         android:background="@color/colorAccent"
         android:gravity="center"
         android:onClick="showFanLayout"
-        android:text="CardLayoutManager"
+        android:text="CardLayoutManager2"
         android:textSize="20dp" />
 
+    <TextView
+        android:id="@+id/tv_test5"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="12dp"
+        android:background="@color/colorAccent"
+        android:gravity="center"
+        android:onClick="itemTouch"
+        android:text="DragAndDrop"
+        android:textSize="20dp" />
+
+
+    <TextView
+        android:id="@+id/tv_test6"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="12dp"
+        android:background="@color/colorAccent"
+        android:gravity="center"
+        android:onClick="itemSwipe"
+        android:text="itemSwipe"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/tv_test7"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="12dp"
+        android:background="@color/colorAccent"
+        android:gravity="center"
+        android:onClick="swipeMenu"
+        android:text="swipeMenu"
+        android:textSize="20dp" />
 </LinearLayout>
